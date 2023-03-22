@@ -22,29 +22,26 @@
 			<li><a href="Lorna_Shore.html">Lorna Shore</a></li>
 			<li><a href="Born_of_Osiris.html">Born of Osiris</a></li>
 			<li>Plus à venir...</li>
-			<li><a href="connexion.html">Connexion</a></li>
+			<li><a href="inscription.html">Inscription</a></li>
 		    </ul>
 		</li>
 	    </ul>
 	</nav>
 
 	<header>
-	    <h1>Inscription</h1>
+	    <h1>Connexion</h1>
 	</header>
 
 	<section>
-	    <form id="form" action="../htbin/register.py" method="post">
+	    <form id="form" action="../htbin/login.py" method="post">
 		<p>
 		    <fieldset>
-			<label for="nom" id="nom"></label> <input type="text" name="lastname" id="lastname" placeholder="Ramos"><br>
-			<label for="prenom" id="prenom"></label> <input type="text" name="firstname" id="firstname" placeholder="Will"><br>
-			<label for="date" id="date"></label> <input type="text" name="birthdate" id="birthdate" placeholder="31/05/1994"><br>
-			<label for="mail" id="mail"></label> <input type="text" name="useremail" id="useremail" placeholder="will.ramos@gmail.com">
-			<label for="username" id="pseudo"></label> <input type="text" name="username" id="username" placeholder="Willy666"><br>
-			<label for="mdp" id="mdp"></label> <input type="password" name="userpwd" id="userpwd"><br>
-			<input type="submit" id="submit" value="Envoyer">
+			<label for="username" id="pseudo">Nom d'utilisateur :<br></label> <input type="text" name="username" id="username" placeholder="Willy666"><br>
+			<label for="mdp" id="mdp"></label>Mot de passe :<br><input type="password" name="userpwd" id="userpwd"><br>
+			<input type="submit" id="connect" hidden>
 		    </fieldset>
 		</p>
+		<p id="reponse"></p>
 	    </form>
 	</section>
 
@@ -54,6 +51,6 @@
 		Des recommandations d'améliorations du site ? <a href="mailto:pastorelliromain@gmail.com">Écrivez-moi</a> <br>
 	    </p>
 	</footer>
-	<script src="../js/inscription.js"></script>
+	<script src="../js/connexion.js"></script>
     </body>
 </html>
